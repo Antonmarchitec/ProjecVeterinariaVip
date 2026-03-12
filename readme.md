@@ -42,3 +42,12 @@ https://antonmarchitec.github.io/landing_veterinaria_vip/
 
 
 
+/***************************************/
+
+📌 Un pequeño consejo para mejorar aún más tu portafolio:
+En cada proyecto público agrega:
+README.md
+demo del sitio
+capturas de pantalla
+tecnologías usadas (HTML, CSS, JS, etc.)
+Eso hace que tu GitHub se vea mucho más profesional.
