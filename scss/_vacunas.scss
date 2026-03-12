@@ -1,0 +1,94 @@
+@use "variables";
+
+.cont__bloque{
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+    background: white;
+    //BLOQUE A
+    .cont__bloque__A{
+        width: 100%;
+        padding: 10px 0px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .cont__bloque__A_cuadro{
+            width: 100%;
+            padding: 10px 0px;
+            margin: 5px;
+            
+            .cont__bloque__A_cuadro__title{
+                text-align: center;
+                font-size: 50px;
+                color:variables.$color-negro;
+                letter-spacing: 2px;
+                font-family:Rainbow;
+
+            }
+            
+            .subcuadro{
+                width: 100%;
+                padding: 10px 0px;
+                display: flex;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items:  center;
+                
+                .subcuadro__interno{
+                    margin-bottom: 30px;
+                    width: 220px;
+                    height: 270px;
+                    padding: 30px;
+                    background: rgb(234, 234, 234);
+                    transition: 0.2s ease;
+                    box-shadow: 1px 1px 2px black;
+                    .subcuadro__interno__img{
+                        width: 80px;
+                        height: 80px;
+                        margin: auto;
+                        padding: 10px;
+                        border-radius: 50%;
+                        background: variables.$color-verde;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .iconJeringa1{
+                            font-size:40px;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+
+                    .subcuadro__interno__text{
+                        text-align: center;
+                        color:rgb(40, 40, 40);
+                        margin-top: 10px;
+                        font-size: 20px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        font-family:Rainbow;
+
+                    }
+
+                    .subcuadro__interno__parraf{
+                        margin-top: 10px;
+                        text-align: center;
+                        font-size: 14px;
+                    }
+                }
+
+                .subcuadro__interno:hover{
+                    cursor:pointer;
+                    transform: scale(1.1,1.1);
+                }
+               
+            }
+        }    
+    }
+}
+
+

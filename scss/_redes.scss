@@ -1,0 +1,71 @@
+@use "./variables";
+
+.contBaseRedes{
+   width: 100%; 
+   padding: 10px 0px;
+   background:rgb(75, 75, 75);
+   .contRedes{
+       width: 100%;
+       padding: 5px;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: space-evenly;
+       align-items: center;
+       .contIcons{
+            .Icons{
+            font-size:18px;
+            color: variables.$color-verde;
+            }
+            .textIcons{
+                color: rgb(255, 255, 255);
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 16px;
+            }
+       }
+   }
+}
+
+
+
+
+
+
+
+
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media only screen and (max-width:720px){
+    .contBaseRedes{
+        width: 100%; 
+        padding: 5px;
+        background:variables.$color-verde;
+        .contRedes{
+            margin-top: 5px;
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .contIcons{
+               
+                 .Icons{
+                 font-size:16px;
+                 color: variables.$color-negro;
+                 }
+                 .textIcons{
+                     text-decoration: none; 
+                     color: rgb(255, 255, 255);
+                     font-family:verdana;
+                     font-size: 11px;
+                 }
+            }
+        }
+     }
+     
+}

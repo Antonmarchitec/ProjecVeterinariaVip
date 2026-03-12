@@ -1,0 +1,1023 @@
+@use "./variables";
+.contSecciones2{
+    padding: 70px 0px;
+    width: 100%;
+    background:white;
+    position: relative;
+    .Subtitles{
+        font-size: variables.$font_size_titles;
+        text-align: center;
+        color: rgb(49, 49, 49);
+        font-family:Rainbow;
+        text-transform: uppercase;
+    }
+    .contSection2{
+        width: 100%;
+        padding: 10px 0px;
+        position: relative;
+        z-index: 100;
+        .contSecciones2_block{
+            width: 90%;
+            padding: 0px;
+            margin: auto;
+            .contSecciones2_box{
+                width:100%;
+                //background: variables.$color-negro;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 100px auto;
+                .block_description{
+                    width: 550px;
+                    padding: 40px;
+                    .block_description_title{
+                        width: 300px;
+                        color: rgb(30, 30, 30);
+                        font-size: 40px;
+                        font-family:Rainbow;
+                        line-height: 1;
+                        font-weight: 300;
+
+                    }
+
+                    .block_description_text{
+                        margin-top: 30px;
+                        color: rgb(28, 28, 28);
+                    }
+
+                    .block_description_btn{
+                        margin-top: 35px;
+                        padding: 10px 50px;
+                        background: variables.$color-verde;
+                        color: white;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        transition: 0.1s all;
+                        border:none;
+                        .iconBtn{
+                            color: rgb(255, 255, 255);
+                            margin-left: 20px;
+                            font-size: 20px;
+                            transition: 0.1s all;
+                        }
+                        
+                    }
+                    .block_description_btn:hover{
+                        background: rgb(234, 234, 234);
+                        color: black;
+                        cursor: pointer;
+                        .iconBtn{
+                            transform: translateX(10px);
+                            color: black;
+
+                        }
+                    }
+                }
+
+                .block_imagen{
+                    width:400px;
+                    height: 380px;
+                    padding: 10px 0px;
+                    background:transparent;
+                }
+            
+            }
+        }
+    }
+
+    .blockHuellas1{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: -150px;
+        left: 80px;
+        opacity: 0.8;
+        transform: rotate(30deg);
+    }
+
+    .blockHuellas2{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom:250px;
+        right: 200px;
+        opacity: 0.6;
+        transform: rotate(-30deg);
+    }
+
+    .blockHuellas3{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top:850px;
+        right: 200px;
+        opacity: 0.5;
+        transform: rotate(-30deg);
+    }
+
+    .blockHuellas4{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        bottom:1050px;
+        left: 400px;
+        opacity: 0.4;
+        transform: rotate(20deg);
+    }
+    
+}
+
+
+
+/*RESPONSIVE DESING OFICIAL NUEVO
+@media (min-width:1025px) and (max-width:1200px){}     175px
+@media (min-width:900px)  and (max-width:1024px){}     124px
+@media (min-width:770px)  and (max-width:899px){}      129px
+@media (min-width:641px)  and (max-width:769px){}      128px
+@media (min-width:481px)  and (max-width:640px){}      159px
+@media (min-width:423px)  and (max-width:480px){}      160px
+
+*/
+
+
+/*************************
+******************
+********************************/
+@media (min-width:1025px) and (max-width:1200px){
+    .contSecciones2{
+        padding: 70px 0px;
+        width: 100%;
+        background:white;
+        position: relative;
+        .Subtitles{
+            font-size: variables.$font_size_titles;
+            text-align: center;
+            color: rgb(49, 49, 49);
+            font-family:Rainbow;
+            text-transform: uppercase;
+        }
+        .contSection2{
+            width: 100%;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 100;
+            .contSecciones2_block{
+                width: 90%;
+                padding: 0px;
+                margin: auto;
+                .contSecciones2_box{
+                    width:100%;
+                    //background: variables.$color-negro;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 100px auto;
+                    .block_description{
+                        width: 450px;
+                        padding: 40px;
+                        .block_description_title{
+                            width: 280px;
+                            color: rgb(30, 30, 30);
+                            font-size: 40px;
+                            font-family:Rainbow;
+                            line-height: 1;
+                            font-weight: 300;
+    
+                        }
+    
+                        .block_description_text{
+                            margin-top: 30px;
+                            color: rgb(28, 28, 28);
+                        }
+    
+                        .block_description_btn{
+                            margin-top: 35px;
+                            padding: 10px 50px;
+                            background: variables.$color-verde;
+                            color: white;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            transition: 0.1s all;
+                            border:none;
+                            .iconBtn{
+                                color: rgb(255, 255, 255);
+                                margin-left: 20px;
+                                font-size: 20px;
+                                transition: 0.1s all;
+                            }
+                            
+                        }
+                        .block_description_btn:hover{
+                            background: rgb(234, 234, 234);
+                            color: black;
+                            cursor: pointer;
+                            .iconBtn{
+                                transform: translateX(10px);
+                                color: black;
+    
+                            }
+                        }
+                    }
+    
+                    .block_imagen{
+                        width:400px;
+                        height: 380px;
+                        padding: 10px 0px;
+                        background:transparent;
+                    }
+                
+                }
+            }
+        }
+    
+        .blockHuellas1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -150px;
+            left: 80px;
+            opacity: 0.8;
+            transform: rotate(30deg);
+        }
+    
+        .blockHuellas2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:250px;
+            right: 200px;
+            opacity: 0.6;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top:850px;
+            right: 200px;
+            opacity: 0.5;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas4{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:1050px;
+            left: 400px;
+            opacity: 0.4;
+            transform: rotate(20deg);
+        }
+        
+    }
+}
+
+
+
+
+/*************************
+******************
+********************************/
+@media (min-width:900px) and (max-width:1024px){
+    .contSecciones2{
+        padding: 70px 0px;
+        width: 100%;
+        position: relative;
+        .Subtitles{
+            font-size: variables.$font_size_titles;
+            text-align: center;
+            color: rgb(49, 49, 49);
+            font-family:Rainbow;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 100;
+        }
+        .contSection2{
+            width: 90%;
+            margin: auto;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 100;
+            .contSecciones2_block{
+                width: 90%;
+                padding: 0px;
+                margin: auto;
+                .contSecciones2_box{
+                    width:90%;
+                    margin: auto;
+                    //background: variables.$color-negro;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 100px auto;
+                    .block_description{
+                        width: 450px;
+                        padding: 40px;
+                        .block_description_title{
+                            width: 280px;
+                            color: rgb(30, 30, 30);
+                            font-size: 40px;
+                            font-family:Rainbow;
+                            line-height: 1;
+                            font-weight: 300;
+    
+                        }
+    
+                        .block_description_text{
+                            margin-top: 25px;
+                            color: rgb(28, 28, 28);
+                        }
+    
+                        .block_description_btn{
+                            margin-top: 30px;
+                            padding: 8px 40px;
+                            background: variables.$color-verde;
+                            color: white;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            transition: 0.1s all;
+                            border:none;
+                            .iconBtn{
+                                color: rgb(255, 255, 255);
+                                margin-left: 20px;
+                                font-size: 15px;
+                                transition: 0.1s all;
+                            }
+                            
+                        }
+                        .block_description_btn:hover{
+                            background: rgb(234, 234, 234);
+                            color: black;
+                            cursor: pointer;
+                            .iconBtn{
+                                transform: translateX(10px);
+                                color: black;
+    
+                            }
+                        }
+                    }
+    
+                    .block_imagen{
+                        width:380px;
+                        height: 300px;
+                        padding: 10px 0px;
+                        background:transparent;
+                    }
+                
+                }
+            }
+        }
+    
+        .blockHuellas1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -150px;
+            left: 80px;
+            opacity: 0.8;
+            transform: rotate(30deg);
+        }
+    
+        .blockHuellas2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:250px;
+            right: 200px;
+            opacity: 0.6;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top:850px;
+            right: 200px;
+            opacity: 0.5;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas4{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:1050px;
+            left: 400px;
+            opacity: 0.4;
+            transform: rotate(20deg);
+        }
+        
+    }
+}
+
+
+
+
+
+/*************************
+******************
+********************************/
+@media (min-width:770px) and (max-width:899px){
+    .contSecciones2{
+        padding: 70px 0px;
+        width: 100%;
+        position: relative;
+        .Subtitles{
+            font-size: 45px;
+            text-align: center;
+            color: rgb(49, 49, 49);
+            font-family:Rainbow;
+            font-weight: 300;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 100;
+        }
+        .contSection2{
+            width: 100%;
+            margin: auto;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 100;
+            .contSecciones2_block{
+                width: 100%;
+                padding: 0px;
+                margin: auto;
+                .contSecciones2_box{
+                    width:90%;
+                    margin: auto;
+                    //background: variables.$color-negro;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 100px auto;
+                    .block_description{
+                        width: 450px;
+                        padding: 40px;
+                        .block_description_title{
+                            width: 280px;
+                            color: rgb(30, 30, 30);
+                            font-size: 40px;
+                            font-family:Rainbow;
+                            line-height: 1;
+                            font-weight: 300;
+    
+                        }
+    
+                        .block_description_text{
+                            margin-top: 25px;
+                            color: rgb(28, 28, 28);
+                        }
+    
+                        .block_description_btn{
+                            margin-top: 30px;
+                            padding: 8px 40px;
+                            background: variables.$color-verde;
+                            color: white;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            transition: 0.1s all;
+                            border:none;
+                            .iconBtn{
+                                color: rgb(255, 255, 255);
+                                margin-left: 20px;
+                                font-size: 15px;
+                                transition: 0.1s all;
+                            }
+                            
+                        }
+                        .block_description_btn:hover{
+                            background: rgb(234, 234, 234);
+                            color: black;
+                            cursor: pointer;
+                            .iconBtn{
+                                transform: translateX(10px);
+                                color: black;
+    
+                            }
+                        }
+                    }
+    
+                    .block_imagen{
+                        width:400px;
+                        height: 320px;
+                        padding: 10px 0px;
+                        background:transparent;
+                    }
+                
+                }
+            }
+        }
+    
+        .blockHuellas1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -150px;
+            left: 80px;
+            opacity: 0.8;
+            transform: rotate(30deg);
+        }
+    
+        .blockHuellas2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:250px;
+            right: 200px;
+            opacity: 0.6;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top:850px;
+            right: 200px;
+            opacity: 0.5;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas4{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:1050px;
+            left: 400px;
+            opacity: 0.4;
+            transform: rotate(20deg);
+        }
+        
+    }
+}
+
+
+
+
+/*************************
+******************
+********************************/
+@media (min-width:641px) and (max-width:769px){
+    .contSecciones2{
+        padding: 70px 0px;
+        width: 100%;
+        position: relative;
+
+        .Subtitles{
+            font-size: 45px;
+            text-align: center;
+            font-weight: 300;
+            color: rgb(49, 49, 49);
+            font-family:Rainbow;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 100;
+        }
+        .contSection2{
+            width: 100%;
+            margin: auto;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 100;
+            .contSecciones2_block{
+                width: 100%;
+                padding: 0px;
+                margin: auto;
+                .contSecciones2_box{
+                    width:95%;
+                    margin: auto;
+                    //background: variables.$color-negro;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 50px auto;
+                    .block_description{
+                        width: 450px;
+                        padding: 40px 20px;
+                        .block_description_title{
+                            width: 280px;
+                            color: rgb(30, 30, 30);
+                            font-size: 38px;
+                            font-family:Rainbow;
+                            line-height: 1;
+                            font-weight: 300;
+    
+                        }
+    
+                        .block_description_text{
+                            margin-top: 20px;
+                            color: rgb(28, 28, 28);
+                        }
+    
+                        .block_description_btn{
+                            margin-top: 30px;
+                            padding: 8px 40px;
+                            background: variables.$color-verde;
+                            color: white;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            transition: 0.1s all;
+                            border:none;
+                            .iconBtn{
+                                color: rgb(255, 255, 255);
+                                margin-left: 20px;
+                                font-size: 15px;
+                                transition: 0.1s all;
+                            }
+                            
+                        }
+                        .block_description_btn:hover{
+                            background: rgb(234, 234, 234);
+                            color: black;
+                            cursor: pointer;
+                            .iconBtn{
+                                transform: translateX(10px);
+                                color: black;
+    
+                            }
+                        }
+                    }
+    
+                    .block_imagen{
+                        width:350px;
+                        height: 300px;
+                        padding: 10px;
+                    }
+                
+                }
+            }
+        }
+    
+        .blockHuellas1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -150px;
+            left: 80px;
+            opacity: 0.8;
+            transform: rotate(30deg);
+        }
+    
+        .blockHuellas2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:250px;
+            right: 200px;
+            opacity: 0.6;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top:850px;
+            right: 200px;
+            opacity: 0.5;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas4{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:1050px;
+            left: 400px;
+            opacity: 0.4;
+            transform: rotate(20deg);
+        }
+        
+    }
+}
+
+
+
+
+/*************************
+******************
+********************************/
+@media (min-width:481px) and (max-width:640px){
+    .contSecciones2{
+        padding: 70px 0px;
+        width: 100%;
+        position: relative;
+
+        .Subtitles{
+            font-size: 45px;
+            text-align: center;
+            color: rgb(49, 49, 49);
+            font-family:Rainbow;
+            text-transform: uppercase;
+            position: relative;
+            font-weight: 300;
+            z-index: 100;
+        }
+        .contSection2{
+            width: 100%;
+            margin: auto;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 100;
+            .contSecciones2_block{
+                width: 100%;
+                padding: 0px;
+                margin: auto;
+                .contSecciones2_box{
+                    width:95%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin: 50px auto;
+                    .block_description{
+                        width: 85%;
+                        padding: 35px 20px;
+                        .block_description_title{
+                            width: 280px;
+                            color: rgb(30, 30, 30);
+                            font-size: 35px;
+                            font-family:Rainbow;
+                            line-height: 1;
+                            font-weight: 300;
+    
+                        }
+    
+                        .block_description_text{
+                            margin-top: 25px;
+                            color: rgb(28, 28, 28);
+                            font-size: 14px;
+                        }
+    
+                        .block_description_btn{
+                            margin-top: 30px;
+                            padding: 8px 40px;
+                            background: variables.$color-verde;
+                            color: white;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            transition: 0.1s all;
+                            border:none;
+                            .iconBtn{
+                                color: rgb(255, 255, 255);
+                                margin-left: 20px;
+                                font-size: 15px;
+                                transition: 0.1s all;
+                            }
+                            
+                        }
+                        .block_description_btn:hover{
+                            background: rgb(234, 234, 234);
+                            color: black;
+                            cursor: pointer;
+                            .iconBtn{
+                                transform: translateX(10px);
+                                color: black;
+    
+                            }
+                        }
+                    }
+    
+                    .block_imagen{
+                        width:300px;
+                        height: 300px;
+                        padding: 10px 0px;
+                        background:transparent;
+                        margin-left:calc(50% - 100px);
+                    }
+                }
+
+                .contenedor2{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: flex-start;
+                    align-items:flex-start ;
+                    .imagen2{
+                        padding: 10px;
+                    }
+                    .descripcion2{
+                        padding: 10px;
+                    }
+                    
+                }
+            }
+        }
+    
+        .blockHuellas1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -150px;
+            left: 80px;
+            opacity: 0.8;
+            transform: rotate(30deg);
+        }
+    
+        .blockHuellas2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:250px;
+            right: 200px;
+            opacity: 0.6;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top:850px;
+            right: 200px;
+            opacity: 0.5;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas4{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:1050px;
+            left: 400px;
+            opacity: 0.4;
+            transform: rotate(20deg);
+        }
+        
+    }
+}
+
+
+
+/*************************
+******************
+********************************/
+@media (min-width:320px) and (max-width:480px){
+    .contSecciones2{
+        padding: 70px 0px;
+        width: 100%;
+        position: relative;
+        .Subtitles{
+            font-size: 45px;
+            text-align: center;
+            color: rgb(49, 49, 49);
+            font-family:Rainbow;
+            text-transform: uppercase;
+            position: relative;
+            font-weight: 300;
+            z-index: 100;
+        }
+        .contSection2{
+            width: 100%;
+            margin: auto;
+            padding: 10px 0px;
+            position: relative;
+            z-index: 100;
+            .contSecciones2_block{
+                width: 100%;
+                padding: 0px;
+                margin: auto;
+                .contSecciones2_box{
+                    width:95%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin: 50px auto;
+                    .block_description{
+                        width: 85%;
+                        padding: 35px 20px;
+                        .block_description_title{
+                            width: 280px;
+                            color: rgb(30, 30, 30);
+                            font-size: 35px;
+                            font-family:Rainbow;
+                            line-height: 1;
+                            font-weight: 300;
+    
+                        }
+    
+                        .block_description_text{
+                            margin-top: 25px;
+                            color: rgb(28, 28, 28);
+                            font-size: 14px;
+                        }
+    
+                        .block_description_btn{
+                            margin-top: 30px;
+                            padding: 8px 40px;
+                            background: variables.$color-verde;
+                            color: white;
+                            font-size: 14px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            transition: 0.1s all;
+                            border:none;
+                            .iconBtn{
+                                color: rgb(255, 255, 255);
+                                margin-left: 20px;
+                                font-size: 15px;
+                                transition: 0.1s all;
+                            }
+                            
+                        }
+                        .block_description_btn:hover{
+                            background: rgb(234, 234, 234);
+                            color: black;
+                            cursor: pointer;
+                            .iconBtn{
+                                transform: translateX(10px);
+                                color: black;
+    
+                            }
+                        }
+                    }
+    
+                    .block_imagen{
+                        width:90%;
+                        height: 300px;
+                        padding: initial;
+                        background:transparent;
+                        margin:auto;
+                    }
+                }
+
+                .contenedor2{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: flex-start;
+                    align-items:flex-start ;
+                    .imagen2{
+                        width: 90%;
+                        margin:auto;
+                    }
+                    .descripcion2{
+                        background: transparent;
+                    }
+                    
+                }
+            }
+        }
+    
+        .blockHuellas1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -150px;
+            left: 80px;
+            opacity: 0.7;
+            transform: rotate(30deg);
+        }
+    
+        .blockHuellas2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:200px;
+            right: 40px;
+            opacity: 0.6;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas3{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top:850px;
+            right: 80px;
+            opacity: 0.5;
+            transform: rotate(-30deg);
+        }
+    
+        .blockHuellas4{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom:1800px;
+            left: 40px;
+            opacity: 0.4;
+            transform: rotate(20deg);
+        }
+        
+    }
+}
+
+
+
+

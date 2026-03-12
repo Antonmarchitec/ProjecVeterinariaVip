@@ -1,0 +1,35 @@
+@use "variables";
+
+.contSlader{
+    width: 100%;
+    padding: 50px 0px;
+    background: variables.$color-verde;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .contSladerTiTlee{
+        width: 500px;
+        margin-left: 100px;
+        text-align: center;
+        font-size: 100px;
+        font-family:Rainbow;
+        letter-spacing: 5px;
+        color: rgb(37, 37, 37);
+
+    }
+
+    .contSladerFigura{
+        width: 600px;
+        height: 480px;
+    }
+    /*
+    
+
+    */
+}
+
+
+
+
+

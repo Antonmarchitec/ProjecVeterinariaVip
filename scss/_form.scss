@@ -1,0 +1,931 @@
+@use "./variables";
+
+
+.contForm{
+    width: 100%;
+    padding: 150px 0px;
+    background: rgb(248, 223, 85);
+    .contContFormImage{
+        width: 90%;
+        margin-left: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        z-index: 200;
+
+        .Formulario{
+            width: 580px;
+            padding: 70px 30px; 
+            .title{
+                text-align: center;
+                color: variables.$color-negro;
+                font-size:50px;
+                line-height: 50px;
+                font-family:Rainbow;
+                margin-bottom: 20px;
+            }
+            .contLabelText{
+                //background: grey;
+                padding: 10px 0px;
+                .labelText{
+                    color:variables.$color-negro;
+                    font-size: 30px;
+                }
+                input[type=text]{
+                    margin-top: 5px;
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 3px;   
+                    outline: none;
+                    font-size: 18px;
+                }
+                textarea{
+                    margin: 5px 0px;
+                    padding: 15px;
+                    border: none;
+                    border-radius: 5px;
+                    color: gray;
+                    width: 100%;
+                    max-width: 100%;
+                    min-width: 100%;
+                    max-height: 150px; 
+                    min-height: 150px;
+                    outline: none;
+                    resize: none;
+                    font-size: 18px;
+                }
+            }
+            .btnEnviar{ 
+                margin-top: 25px;
+                padding: 10px 30px;
+                position: relative;
+                background: variables.$color-negro;
+                border: none;
+                font-size: 16px;
+                border-radius: 5px;
+                color: white;
+                transition: 0.2s all;
+             }
+             .btnEnviar:hover{
+                background:grey;
+                color: rgb(255, 255, 255); 
+                cursor: pointer; 
+             }
+        }
+
+
+        .contFormImage{
+            width: auto;
+            height: 600px;
+            position: absolute;
+            top: -300px;
+            right: 0;
+            animation: perroAnimado 6s infinite;
+            @keyframes perroAnimado {
+                0%{
+                  transform: scale(1,1);
+                }
+                50%{
+                  transform: scale(1.01,1.01);
+                }
+            }
+        }
+
+
+        .contFormImage_huella1{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 0px;
+            top: 40px;
+            transform: rotate(-10deg);
+            z-index: -1;
+        }
+
+        .contFormImage_huella2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            z-index: -1;
+            right: 250px;
+            bottom: 0;
+            transform: rotate(0deg);
+            
+        }
+       
+    }
+}
+
+
+
+
+/*
+RESPONSIVE DESING OFICIAL NUEVO
+@media (min-width:1025px) and (max-width:1200px){}     175px
+@media (min-width:900px)  and (max-width:1024px){}     124px
+@media (min-width:770px)  and (max-width:899px){}      129px
+@media (min-width:641px)  and (max-width:769px){}      128px
+@media (min-width:481px)  and (max-width:640px){}      159px
+@media (min-width:320px)  and (max-width:480px){}      160px
+
+*/
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media (min-width:1025px) and (max-width:1200px){
+    .contForm{
+        width: 100%;
+        padding: 150px 0px;
+        .contContFormImage{
+            width: 90%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            z-index: 200;
+    
+            .Formulario{
+                width: 530px;
+                padding: 70px 30px; 
+                position: relative;
+                z-index: 100;
+                .title{
+                    text-align: center;
+                    color: variables.$color-negro;
+                    font-size:50px;
+                    line-height: 50px;
+                    font-family:Rainbow;
+                    margin-bottom: 20px;
+                }
+                .contLabelText{
+                    //background: grey;
+                    padding: 10px 0px;
+                    .labelText{
+                        color:variables.$color-negro;
+                        font-size: 30px;
+                    }
+                    input[type=text]{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 3px;   
+                        outline: none;
+                        font-size: 18px;
+                    }
+                    textarea{
+                        margin: 5px 0px;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 5px;
+                        color: gray;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 150px; 
+                        min-height: 150px;
+                        outline: none;
+                        resize: none;
+                        font-size: 18px;
+                    }
+                }
+                .btnEnviar{ 
+                    margin-top: 25px;
+                    padding: 10px 30px;
+                    position: relative;
+                    background: variables.$color-negro;
+                    border: none;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s all;
+                 }
+                 .btnEnviar:hover{
+                    background:grey;
+                    color: rgb(255, 255, 255); 
+                    cursor: pointer; 
+                 }
+            }
+    
+    
+            .contFormImage{
+                width: auto;
+                height: 600px;
+                position: absolute;
+                top: -300px;
+                right: 0;
+                animation: perroAnimado 6s infinite;
+                @keyframes perroAnimado {
+                    0%{
+                      transform: scale(1,1);
+                    }
+                    50%{
+                      transform: scale(1.01,1.01);
+                    }
+                }
+            }
+    
+    
+            .contFormImage_huella1{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 0px;
+                top: 40px;
+                transform: rotate(-10deg);
+                z-index: -1;
+            }
+    
+            .contFormImage_huella2{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                z-index: -1;
+                right: 100px;
+                bottom: 0;
+                transform: rotate(0deg);
+                
+            }
+           
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media (min-width:900px) and (max-width:1024px){
+    .contForm{
+        width: 100%;
+        padding: 150px 0px;
+        .contContFormImage{
+            width: 90%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            z-index: 200;
+    
+            .Formulario{
+                width: 530px;
+                padding: 70px 30px; 
+                position: relative;
+                z-index: 100;
+                .title{
+                    text-align: center;
+                    color: variables.$color-negro;
+                    font-size:50px;
+                    line-height: 50px;
+                    font-family:Rainbow;
+                    margin-bottom: 20px;
+                }
+                .contLabelText{
+                    //background: grey;
+                    padding: 10px 0px;
+                    .labelText{
+                        color:variables.$color-negro;
+                        font-size: 30px;
+                    }
+                    input[type=text]{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 3px;   
+                        outline: none;
+                        font-size: 18px;
+                    }
+                    textarea{
+                        margin: 5px 0px;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 5px;
+                        color: gray;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 150px; 
+                        min-height: 150px;
+                        outline: none;
+                        resize: none;
+                        font-size: 18px;
+                    }
+                }
+                .btnEnviar{ 
+                    margin-top: 25px;
+                    padding: 10px 30px;
+                    position: relative;
+                    background: variables.$color-negro;
+                    border: none;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s all;
+                 }
+                 .btnEnviar:hover{
+                    background:grey;
+                    color: rgb(255, 255, 255); 
+                    cursor: pointer; 
+                 }
+            }
+    
+    
+            .contFormImage{
+                width: 60%;
+                height: 500px;
+                position: absolute;
+                top: -300px;
+                right: 0;
+                animation: perroAnimado 6s infinite;
+                @keyframes perroAnimado {
+                    0%{
+                      transform: scale(1,1);
+                    }
+                    50%{
+                      transform: scale(1.01,1.01);
+                    }
+                }
+            }
+    
+    
+            .contFormImage_huella1{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 0px;
+                top: 40px;
+                transform: rotate(-10deg);
+                z-index: -1;
+            }
+    
+            .contFormImage_huella2{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                z-index: -1;
+                right: 100px;
+                bottom: 0;
+                transform: rotate(0deg);
+                
+            }
+           
+        }
+    }
+    
+}
+
+
+
+
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media (min-width:770px) and (max-width:899px){
+    .contForm{
+        width: 100%;
+        padding: 100px 0px;
+        .contContFormImage{
+            width: 90%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            z-index: 200;
+    
+            .Formulario{
+                width: 530px;
+                padding: 70px 30px; 
+                position: relative;
+                z-index: 100;
+                .title{
+                    text-align: center;
+                    color: variables.$color-negro;
+                    font-size:50px;
+                    line-height: 50px;
+                    font-family:Rainbow;
+                    margin-bottom: 20px;
+                }
+                .contLabelText{
+                    //background: grey;
+                    padding: 10px 0px;
+                    .labelText{
+                        color:variables.$color-negro;
+                        font-size: 30px;
+                    }
+                    input[type=text]{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 3px;   
+                        outline: none;
+                        font-size: 18px;
+                    }
+                    textarea{
+                        margin: 5px 0px;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 5px;
+                        color: gray;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 150px; 
+                        min-height: 150px;
+                        outline: none;
+                        resize: none;
+                        font-size: 18px;
+                    }
+                }
+                .btnEnviar{ 
+                    margin-top: 25px;
+                    padding: 10px 30px;
+                    position: relative;
+                    background: variables.$color-negro;
+                    border: none;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s all;
+                 }
+                 .btnEnviar:hover{
+                    background:grey;
+                    color: rgb(255, 255, 255); 
+                    cursor: pointer; 
+                 }
+            }
+    
+    
+            .contFormImage{
+                width: 70%;
+                height: 500px;
+                position: absolute;
+                top: -300px;
+                right: 0;
+                animation: perroAnimado 6s infinite;
+                @keyframes perroAnimado {
+                    0%{
+                      transform: scale(1,1);
+                    }
+                    50%{
+                      transform: scale(1.01,1.01);
+                    }
+                }
+            }
+    
+    
+            .contFormImage_huella1{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 0px;
+                top: 40px;
+                transform: rotate(-10deg);
+                z-index: -1;
+            }
+    
+            .contFormImage_huella2{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                z-index: -1;
+                right: 50px;
+                bottom: 0;
+                transform: rotate(0deg);
+                
+            }
+           
+        }
+    }
+    
+}
+
+
+
+
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media (min-width:641px) and (max-width:769px){
+    .contForm{
+        width: 100%;
+        padding: 100px 0px;
+        .contContFormImage{
+            width: 90%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            z-index: 200;
+    
+            .Formulario{
+                width: 530px;
+                padding: 70px 30px; 
+                position: relative;
+                z-index: 100;
+                .title{
+                    text-align: center;
+                    color: variables.$color-negro;
+                    font-size:45px;
+                    font-weight: 300;
+                    line-height: 50px;
+                    font-family:Rainbow;
+                    margin-bottom: 20px;
+                }
+                .contLabelText{
+                    //background: grey;
+                    padding: 10px 0px;
+                    .labelText{
+                        color:variables.$color-negro;
+                        font-size: 30px;
+                    }
+                    input[type=text]{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 3px;   
+                        outline: none;
+                        font-size: 16px;
+                    }
+                    textarea{
+                        margin: 5px 0px;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 5px;
+                        color: gray;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 150px; 
+                        min-height: 150px;
+                        outline: none;
+                        resize: none;
+                        font-size: 18px;
+                    }
+                }
+                .btnEnviar{ 
+                    margin-top: 25px;
+                    padding: 8px 28px;
+                    position: relative;
+                    background: variables.$color-negro;
+                    border: none;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s all;
+                 }
+                 .btnEnviar:hover{
+                    background:grey;
+                    color: rgb(255, 255, 255); 
+                    cursor: pointer; 
+                 }
+            }
+    
+    
+            .contFormImage{
+                width: 60%;
+                height: 400px;
+                position: absolute;
+                top: -200px;
+                right: 20px;
+                animation: perroAnimado 6s infinite;
+                @keyframes perroAnimado {
+                    0%{
+                      transform: scale(1,1);
+                    }
+                    50%{
+                      transform: scale(1.01,1.01);
+                    }
+                }
+            }
+    
+    
+            .contFormImage_huella1{
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                left: 0px;
+                top: 40px;
+                transform: rotate(-10deg);
+                z-index: -1;
+            }
+    
+            .contFormImage_huella2{
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                z-index: -1;
+                right: 50px;
+                bottom: 0;
+                transform: rotate(0deg);
+                
+            }
+           
+        }
+    }
+    
+}
+
+
+
+
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media (min-width:481px) and (max-width:640px){
+    .contForm{
+        width: 100%;
+        padding: 100px 0px;
+        .contContFormImage{
+            width: 90%;
+            margin-left: initial;
+            display: initial;
+            flex-direction: initial;
+            flex-wrap: initial;
+            justify-content: initial;
+            align-items: initial;
+            position: relative;
+            z-index: 200;
+    
+            .Formulario{
+                margin: auto;
+                width:90%;
+                padding: auto 30px; 
+                padding-top: 200px;
+                position: relative;
+                z-index: 100;
+                .title{
+                    width: 90%;
+                    text-align: center;
+                    color: variables.$color-negro;
+                    font-size:40px;
+                    font-weight: 300;
+                    line-height: 40px;
+                    font-family:Rainbow;
+                    margin-bottom: 20px;
+                }
+                .contLabelText{
+                    //background: grey;
+                    padding: 10px 0px;
+                    .labelText{
+                        color:variables.$color-negro;
+                        font-size: 25px;
+                    }
+                    input[type=text]{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 3px;   
+                        outline: none;
+                        font-size: 14px;
+                    }
+                    textarea{
+                        margin: 5px 0px;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 5px;
+                        color: gray;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 150px; 
+                        min-height: 150px;
+                        outline: none;
+                        resize: none;
+                        font-size: 14px;
+                    }
+                }
+                .btnEnviar{ 
+                    margin-top:10px;
+                    padding: 8px 28px;
+                    position: relative;
+                    background: variables.$color-negro;
+                    border: none;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s all;
+                 }
+                 .btnEnviar:hover{
+                    background:grey;
+                    color: rgb(255, 255, 255); 
+                    cursor: pointer; 
+                 }
+            }
+    
+    
+            .contFormImage{
+                width: 70%;
+                height: 380px;
+                position: absolute;
+                top: -200px;
+                right: 20px;
+                animation: perroAnimado 6s infinite;
+                @keyframes perroAnimado {
+                    0%{
+                      transform: scale(1,1);
+                    }
+                    50%{
+                      transform: scale(1.01,1.01);
+                    }
+                }
+            }
+    
+    
+            .contFormImage_huella1{
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                left: 20px;
+                top: 100px;
+                transform: rotate(-10deg);
+                z-index: -1;
+            }
+    
+            .contFormImage_huella2{
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                z-index: -1;
+                right: 50px;
+                bottom: 0;
+                transform: rotate(0deg);
+                
+            }
+           
+        }
+    }
+    
+}
+
+
+
+
+
+/***************************************************************************
+*******************************
+*******************************
+****************************************************************************/
+@media (min-width:320px) and (max-width:480px){
+    .contForm{
+        width: 100%;
+        padding: 100px 0px;
+        .contContFormImage{
+            width: 90%;
+            margin-left: initial;
+            display: initial;
+            flex-direction: initial;
+            flex-wrap: initial;
+            justify-content: initial;
+            align-items: initial;
+            position: relative;
+            z-index: 200;
+    
+            .Formulario{
+                margin: auto;
+                width:100%;
+                padding: auto 10px; 
+                padding-top: 150px;
+                position: relative;
+                z-index: 100;
+                .title{
+                    width: 90%;
+                    text-align: center;
+                    color: variables.$color-negro;
+                    font-size:40px;
+                    font-weight: 300;
+                    line-height: 40px;
+                    font-family:Rainbow;
+                    margin-bottom: 20px;
+                }
+                .contLabelText{
+                    //background: grey;
+                    padding: 10px 0px;
+                    .labelText{
+                        color:variables.$color-negro;
+                        font-size: 25px;
+                    }
+                    input[type=text]{
+                        margin-top: 5px;
+                        width: 100%;
+                        padding: 8px;
+                        border: none;
+                        border-radius: 3px;   
+                        outline: none;
+                        font-size: 14px;
+                    }
+                    textarea{
+                        margin: 5px 0px;
+                        padding: 15px;
+                        border: none;
+                        border-radius: 5px;
+                        color: gray;
+                        width: 100%;
+                        max-width: 100%;
+                        min-width: 100%;
+                        max-height: 150px; 
+                        min-height: 150px;
+                        outline: none;
+                        resize: none;
+                        font-size: 14px;
+                    }
+                }
+                .btnEnviar{ 
+                    margin-top:10px;
+                    padding: 8px 28px;
+                    position: relative;
+                    background: variables.$color-negro;
+                    border: none;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    color: white;
+                    transition: 0.2s all;
+                 }
+                 .btnEnviar:hover{
+                    background:grey;
+                    color: rgb(255, 255, 255); 
+                    cursor: pointer; 
+                 }
+            }
+    
+    
+            .contFormImage{
+                width: 90%;
+                height: 400px;
+                padding: 10px;
+                position: absolute;
+                top: -210px;
+                right: 0px;
+                animation: perroAnimado 6s infinite;
+                @keyframes perroAnimado {
+                    0%{
+                      transform: scale(1,1);
+                    }
+                    50%{
+                      transform: scale(1.01,1.01);
+                    }
+                }
+            }
+    
+    
+            .contFormImage_huella1{
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                left: 20px;
+                top: 100px;
+                transform: rotate(-10deg);
+                z-index: -1;
+            }
+    
+            .contFormImage_huella2{
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                z-index: -1;
+                right: 50px;
+                bottom: 0;
+                transform: rotate(0deg);
+                
+            }
+           
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,60 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');*/
+
+@use "variables";
+@use "grid";
+@use "redes";
+@use "menu";
+@use "slader";
+@use "swiperStyle";
+@use "about";
+@use "certtificacion";
+@use "services";
+@use "estudios";
+@use "vacunas";
+@use "form";
+@use "preloader";
+@use "footer";
+@use "./enviado";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    //font-family: "Indie Flower", cursive;
+    font-family: "Poppins", sans-serif;
+   
+}
+
+
+
+@font-face {
+    src: url(../webfonts/Rainbow.woff);
+    font-family:Rainbow;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+body{
+    scroll-behavior:unset;
+}
+
+body::-webkit-scrollbar{
+    width: 15px;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: rgb(32, 32, 32);
+    border-radius: 0px;
+    height: 100px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #00eeff;
+    height: 150px;
+    
+}
+
