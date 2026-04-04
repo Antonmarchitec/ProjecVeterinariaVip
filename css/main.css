@@ -659,10 +659,6 @@ $color-negro:rgb(32, 32, 32);
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /*
-
-
-  */
 }
 .contSlader .contSladerTiTlee {
   width: 500px;
@@ -676,6 +672,12 @@ $color-negro:rgb(32, 32, 32);
 .contSlader .contSladerFigura {
   width: 600px;
   height: 480px;
+}
+.contSlader {
+  /*
+
+
+  */
 }
 
 /*@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');*/
